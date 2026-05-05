@@ -12,10 +12,10 @@ class Subject {
 }
 // Використання
 const subject = new Subject();
-subject.subscribe((data) => {
+subject.subscribe((data: any) => {
     console.log("Observer 1:", data);
 });
-subject.subscribe((data) => {
+subject.subscribe((data: any) => {
     console.log("Observer 2:", data);
 });
 subject.notify("Hello Observers");
